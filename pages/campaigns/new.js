@@ -3,6 +3,7 @@ import {Form, Button, Input, Message} from "semantic-ui-react";
 import Layout from "../../components/layout";
 import Factory from '../../ethereum/factory';
 import web3 from '../../ethereum/web3';
+import {Router} from '../../routes';
 
 class CampaignNew extends Component {
 
@@ -21,9 +22,9 @@ class CampaignNew extends Component {
       this.state.submitInProgress = true;
       const accounts = await web3.eth.getAccounts();
       await Factory.methods.createCampaign(contribution).send({from: accounts[0],});
+      Router.pushRoute('/');
     } catch (error) {
       this.setState({errorMessage: error.message});
-
     }
     this.setState({submitInProgress: false});
 
