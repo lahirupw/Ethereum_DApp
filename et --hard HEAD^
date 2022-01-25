@@ -1,0 +1,55 @@
+[1mdiff --git a/.next/build-manifest.json b/.next/build-manifest.json[m
+[1mindex 05e2966..fa68980 100644[m
+[1m--- a/.next/build-manifest.json[m
+[1m+++ b/.next/build-manifest.json[m
+[36m@@ -33,6 +33,11 @@[m
+       "static/chunks/webpack.js",[m
+       "static/chunks/main.js",[m
+       "static/chunks/pages/campaigns/new.js"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "/campaigns/show": [[m
+[32m+[m[32m      "static/chunks/webpack.js",[m
+[32m+[m[32m      "static/chunks/main.js",[m
+[32m+[m[32m      "static/chunks/pages/campaigns/show.js"[m
+     ][m
+   },[m
+   "ampFirstPages": [][m
+[1mdiff --git a/.next/cache/webpack/client-development/0.pack b/.next/cache/webpack/client-development/0.pack[m
+[1mindex 8ca7932..4a3517a 100644[m
+Binary files a/.next/cache/webpack/client-development/0.pack and b/.next/cache/webpack/client-development/0.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/1.pack b/.next/cache/webpack/client-development/1.pack[m
+[1mindex 9e51268..723b7ca 100644[m
+Binary files a/.next/cache/webpack/client-development/1.pack and b/.next/cache/webpack/client-development/1.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/2.pack b/.next/cache/webpack/client-development/2.pack[m
+[1mindex 1d883da..a0ee007 100644[m
+Binary files a/.next/cache/webpack/client-development/2.pack and b/.next/cache/webpack/client-development/2.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/3.pack b/.next/cache/webpack/client-development/3.pack[m
+[1mindex 3e1223c..54f5832 100644[m
+Binary files a/.next/cache/webpack/client-development/3.pack and b/.next/cache/webpack/client-development/3.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/4.pack b/.next/cache/webpack/client-development/4.pack[m
+[1mindex f0c8034..0709b29 100644[m
+Binary files a/.next/cache/webpack/client-development/4.pack and b/.next/cache/webpack/client-development/4.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/6.pack b/.next/cache/webpack/client-development/6.pack[m
+[1mindex f792b46..f581188 100644[m
+Binary files a/.next/cache/webpack/client-development/6.pack and b/.next/cache/webpack/client-development/6.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/7.pack b/.next/cache/webpack/client-development/7.pack[m
+[1mindex 7944c54..02fd74d 100644[m
+Binary files a/.next/cache/webpack/client-development/7.pack and b/.next/cache/webpack/client-development/7.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/8.pack b/.next/cache/webpack/client-development/8.pack[m
+[1mindex dd549e6..15d6a6b 100644[m
+Binary files a/.next/cache/webpack/client-development/8.pack and b/.next/cache/webpack/client-development/8.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/index.pack b/.next/cache/webpack/client-development/index.pack[m
+[1mindex 8c2e7a8..39899b6 100644[m
+Binary files a/.next/cache/webpack/client-development/index.pack and b/.next/cache/webpack/client-development/index.pack differ
+[1mdiff --git a/.next/cache/webpack/client-development/index.pack.old b/.next/cache/webpack/client-development/index.pack.old[m
+[1mindex 19b80e9..8387d02 100644[m
+Binary files a/.next/cache/webpack/client-development/index.pack.old and b/.next/cache/webpack/client-development/index.pack.old differ
+[1mdiff --git a/.next/cache/webpack/server-development/0.pack b/.next/cache/webpack/server-development/0.pack[m
+[1mindex 0ef26ff..0a586b7 100644[m
+Binary files a/.next/cache/webpack/server-development/0.pack and b/.next/cache/webpack/server-development/0.pack differ
+[1mdiff --git a/.next/cache/webpack/server-development/1.pack b/.next/cache/webpack/server-development/1.pack[m
+[1mindex 866ed30..affc39d 100644[m
+Binary files a/.next/cache/webpack/server-development/1.pack and b/.next/cache/webpack/server-development/1.pack differ
+[1mdiff --git a/.next/cache/webpack/server-development/10.pack b/.next/cache/webpack/server-development/10.pack[m
+[1mindex ec673ec..ff2ff07 100644[m
+Binary files a/.next/cache/webpa
