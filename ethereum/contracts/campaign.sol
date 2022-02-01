@@ -107,4 +107,19 @@ contract Campaign is Utility{
         request.complete = true;
     }
 
+    function getSummary() public view returns(uint, uint, uint, uint, address){
+
+        return(
+            minimumContribution,
+            address(this).balance,
+            numberOfRequests,
+            approversCount,
+            manager
+        );
+    }
+
+    function getRequestCount() public view returns(uint){
+        return numberOfRequests;
+    }
+
 }

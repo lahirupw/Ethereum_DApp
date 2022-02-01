@@ -33,12 +33,10 @@ const inputObject ={
 //const output = JSON.parse(solc.compile(JSON.stringify(inputObject))).contracts['campaign.sol'].CampaignFactory;
 const output = JSON.parse(solc.compile(JSON.stringify(inputObject))).contracts['campaign.sol'];
 
-console.log(output);
-
-
 for(let contract in output){
     fs.outputJSONSync(
         path.resolve(buildPath,contract+'.json'),
         output[contract]
     );
 }
+
