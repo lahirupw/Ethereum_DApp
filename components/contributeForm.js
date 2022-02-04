@@ -13,27 +13,27 @@ class contributeForm extends Component{
     }
 
     onSubmit = async (event)=>{
-        let cont = this.state.contribution;
+        //let cont = this.state.contribution;
         this.setState({submitInProgress:true, errorMessage:''});
         event.preventDefault();
         try {
             const CampaignContract = Campaign(this.props.address);
             const accounts = await web3.eth.getAccounts();
             await CampaignContract.methods.contribute().send({from: accounts[0], value: web3.utils.toWei(this.state.contribution,'ether')});
-            Router.pushRoute(`/campaigns/${this.props.address}`);
-            this.setState({contribution:''});
+            Router.replaceRoute(`/campaigns/${this.props.address}`);
+            
         } catch (err) {
             this.setState({errorMessage: err.message});
 
         }
-
+        this.setState({contribution:''});
         this.setState({submitInProgress:false});
     }
 
 
     render() {
         return(
-            <Form error={this.state.errorMessage} onSubmit={this.onSubmit}>
+            <Form error={!!this.state.errorMessage} onSubmit={this.onSubmit}>
                 <Form.Field>
                     <label>Amount to Contribute</label>
                     <Input 
