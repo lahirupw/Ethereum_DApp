@@ -7,6 +7,7 @@ import ContributeForm from "../../components/contributeForm";
 import { Link } from "../../routes";
 
 class CampaignShowing extends Component {
+  
   static async getInitialProps(props) {
     const campaign = campaignContract(props.query.address);
     const summary = await campaign.methods.getSummary().call();
